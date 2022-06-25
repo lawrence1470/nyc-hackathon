@@ -1,0 +1,36 @@
+{
+  "name": "frontend-starter2022",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.3.4",
+    "@superfluid-finance/sdk-core": "^0.4.2",
+    "@walletconnect/sign-client": "^2.0.0-beta.101",
+    "@walletconnect/web3-provider": "^1.7.8",
+    "axios": "^0.27.2",
+    "better-sqlite3": "^7.5.3",
+    "ethers": "^5.6.8",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-query": "^3.39.1",
+    "wagmi": "^0.4.2",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@types/react": "^18.0.9",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "typescript": "^4.7.2"
+  }
+}
