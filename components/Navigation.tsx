@@ -1,5 +1,7 @@
 import React from 'react'
 import {ConnectButton} from '@rainbow-me/rainbowkit';
+import Button from '@mui/material/Button';
+import * as acc from './account.js';
 
 
 const Navigation = () => {
@@ -10,6 +12,7 @@ const Navigation = () => {
                 Period dApp
             </h1>
             <ConnectButton/>
+            <Button variant="outlined" color="primary" onClick={acc.makeAcc}>Contained</Button>
         </nav>
     )
 }

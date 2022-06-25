@@ -12,6 +12,13 @@ import {
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 
+import { ThemeProvider } from '@mui/material/styles';
+import { CacheProvider } from '@emotion/react';
+import theme from '../components/theme';
+import createEmotionCache from '../components/createEmotionCache';
+
+const clientSideEmotionCache = createEmotionCache();
+
 const queryClient = new QueryClient()
 
 // const sf = await Framework.create({
@@ -54,14 +61,17 @@ const wagmiClient = createClient({
 
 function MyApp({Component, pageProps}: AppProps) {
     return (
-        <QueryClientProvider client={queryClient}>
-            <WagmiConfig client={wagmiClient}>
-                <RainbowKitProvider chains={chains}>
-                    <Component {...pageProps} />
-                </RainbowKitProvider>
-            </WagmiConfig>
-        </QueryClientProvider>
-
+      <CacheProvider value={clientSideEmotionCache}>
+        <ThemeProvider theme={theme}>
+          <QueryClientProvider client={queryClient}>
+              <WagmiConfig client={wagmiClient}>
+                  <RainbowKitProvider chains={chains}>
+                      <Component {...pageProps} />
+                  </RainbowKitProvider>
+              </WagmiConfig>
+          </QueryClientProvider>
+        </ThemeProvider>
+      </CacheProvider>
     );
 }
 
