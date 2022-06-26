@@ -12,6 +12,9 @@ const Home: NextPage = () => {
     return (
         <div>
             <Navigation/>
+            <div className="mt-10 mx-28">
+                <h1 className="text-8xl">Dashboard</h1>
+            </div>
         </div>
     );
 };

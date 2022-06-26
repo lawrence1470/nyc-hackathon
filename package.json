@@ -15,7 +15,6 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
-    
     "@rainbow-me/rainbowkit": "^0.3.4",
     "@superfluid-finance/sdk-core": "^0.4.2",
     "@walletconnect/sign-client": "^2.0.0-beta.101",
