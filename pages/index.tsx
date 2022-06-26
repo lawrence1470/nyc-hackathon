@@ -9,9 +9,6 @@ import {useAccount} from "wagmi";
 const Home: NextPage = () => {
     const {data, isError, isLoading} = useAccount()
 
-    if (isLoading) return <div>Loading account…</div>
-    if (isError) return <div>Error loading account</div>
-
     return (
         <div>
             <Navigation/>
