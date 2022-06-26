@@ -21,6 +21,7 @@
     "@walletconnect/web3-provider": "^1.7.8",
     "axios": "^0.27.2",
     "better-sqlite3": "^7.5.3",
+    "cryptocurrency-unit-convert": "^1.2.8",
     "ethers": "^5.6.8",
     "next": "^12.1.6",
     "react": "^18.1.0",

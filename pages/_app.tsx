@@ -9,8 +9,7 @@ import {
     QueryClient,
     QueryClientProvider,
 } from 'react-query'
-import { Framework } from "@superfluid-finance/sdk-core";
-import { ethers } from "ethers";
+
 
 import { ThemeProvider } from '@mui/material/styles';
 import { CacheProvider } from '@emotion/react';

@@ -12,7 +12,6 @@ const Navigation = () => {
                 Period dApp
             </h1>
             <ConnectButton/>
-            <Button variant="outlined" color="primary" onClick={acc.makeAcc}>Contained</Button>
         </nav>
     )
 }
